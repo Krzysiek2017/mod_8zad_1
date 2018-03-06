@@ -1,10 +1,7 @@
-import { createStore, combineReducers } from 'redux';
-import DevTools from '../DevTools';
-import reducers from '../reducers/index';
+import { createStore, combineReducers } from "redux";
+import DevTools from "../DevTools";
+import reducers from "../reducers/index";
 
-const store = createStore(
-  reducers,
-  DevTools.instrument()
-);
+const store = createStore(reducers, DevTools.instrument());
 
 export default store;
